@@ -43,7 +43,7 @@ export class AnimatedCanvasLogoComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.onResize();
     // Make the flock visible by ticking a few times
-    for (let i=0 ; i<50 ; i++) {
+    for (let i = 0 ; i < 50 ; i++) {
       this.flock.tick();
     }
     // Paint once to make things visible
@@ -72,7 +72,7 @@ export class AnimatedCanvasLogoComponent implements OnInit, OnDestroy {
 
   private paint(loop = true) {
     // Paint current frame
-    let ctx: CanvasRenderingContext2D =
+    const ctx: CanvasRenderingContext2D =
       this.canvasRef.nativeElement.getContext('2d');
 
     // Background

@@ -11,7 +11,7 @@ export class BasicCanvasLogoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let ctx: CanvasRenderingContext2D =
+    const ctx: CanvasRenderingContext2D =
       this.canvasRef.nativeElement.getContext('2d');
 
     // Draw the clip path that will mask everything else
@@ -40,11 +40,11 @@ export class BasicCanvasLogoComponent implements OnInit {
     // Draw 50,000 circles at random points
     ctx.beginPath();
     ctx.fillStyle = '#DD0031';
-    for (let i=0 ; i < 50000 ; i++) {
-      let x = Math.random() * 500;
-      let y = Math.random() * 500;
+    for (let i = 0 ; i < 50000 ; i++) {
+      const x = Math.random() * 500;
+      const y = Math.random() * 500;
       ctx.moveTo(x, y);
-      ctx.arc(x, y, 1, 0, Math.PI*2);
+      ctx.arc(x, y, 1, 0, Math.PI * 2);
     }
     ctx.fill();
   }
