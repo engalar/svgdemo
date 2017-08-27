@@ -1,5 +1,7 @@
 # Svgdemo
 
+fork from [this post](https://teropa.info/blog/2016/12/12/graphics-in-angular-2.html)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
 
 ## Development server
