@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AnimatedLogoCssComponent {
 
+  fill = 'blue';
   constructor() { }
-
+  mouseenter() {
+    this.fill = 'red';
+    console.log('enter');
+  }
+  mouseleave() {
+    this.fill = 'blue';
+  }
 }
