@@ -1,0 +1,14 @@
+.cp{
+    stroke: #101099;
+    stroke-width: 2;
+    fill: rgba(0, 0, 255, 0.78);
+
+    /* width: 10px;
+    height: 10px; */
+}
+.cr{
+    stroke: #169E5D;
+    stroke-width: 1;
+    fill: rgba(17, 191, 64, 0.78);
+    fill-opacity: 0.4;
+}

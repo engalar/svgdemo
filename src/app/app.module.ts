@@ -13,6 +13,7 @@ import { BasicCanvasLogoComponent } from 'app/basic-canvas-logo/basic-canvas-log
 import { AnimatedLogoNganimateComponent } from 'app/animated-logo-nganimate/animated-logo-nganimate.component';
 import { ChangingCanvasLogoModule } from 'app/changing-canvas-logo/changing-canvas-logo.module';
 import { LogoWithComponentsModule } from 'app/logo-with-components/logo-with-components.module';
+import { RectangleComponent } from './rectangle/rectangle.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LogoWithComponentsModule } from 'app/logo-with-components/logo-with-com
     AnimatedLogoNganimateComponent,
     AnimatedLogoGsapComponent,
     BasicCanvasLogoComponent,
-    AnimatedCanvasLogoComponent
+    AnimatedCanvasLogoComponent,
+    RectangleComponent,
   ],
   imports: [
     BrowserModule,
