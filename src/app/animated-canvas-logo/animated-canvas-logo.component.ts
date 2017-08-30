@@ -20,7 +20,7 @@ const MAX_AGE = 3000;
 export class AnimatedCanvasLogoComponent implements OnInit, OnDestroy {
 
   @ViewChild('canvas') canvasRef: ElementRef;
-  private running: boolean;
+  public running: boolean;
   private flock: Flock;
 
   constructor(private ngZone: NgZone,
