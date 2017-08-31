@@ -13,14 +13,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 
 /***/ }),
 
-/***/ "../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h1>Canvas Animations</h1>\r\n\r\n<p>When we want to animate things with canvas, we need to draw every frame because of the immediate-mode rendering model. We can do this using <code>requestAnimationFrame()</code>, for which we can set up a loop using component lifecycle hooks.</p>\r\n\r\n<p>Our application data will need to have some notion of time for this to work, e.g. to draw intermediate frames, we need to know about the timing of the animation relative to the time of the current frame: When it was started, when it should end.</p>\r\n\r\n<div class=\"controls\">\r\n  <button (click)=\"toggleSimulation()\">\r\n    {{ running ? 'Stop simulation' : 'Start simulation' }}\r\n  </button>\r\n</div>\r\n\r\n<canvas #canvas width=\"800\" height=\"500\">\r\n</canvas>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.scss":
+/***/ "../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -28,13 +21,20 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ":host {\n  display: block; }\n\ncanvas {\n  display: block;\n  margin: 0 auto; }\n\n.controls {\n  text-align: center;\n  margin-bottom: .5em; }\n  .controls button {\n    padding: 1em 2em; }\n", ""]);
+exports.push([module.i, ":host {\r\n  display: block;\r\n}\r\ncanvas {\r\n  display: block;\r\n  margin: 0 auto;\r\n}\r\n\r\n.controls {\r\n  text-align: center;\r\n  margin-bottom: .5em;\r\n\r\n}\r\n.controls.button {\r\n  padding: 1em 2em;\r\n}\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Canvas Animations</h1>\r\n\r\n<p>When we want to animate things with canvas, we need to draw every frame because of the immediate-mode rendering model. We can do this using <code>requestAnimationFrame()</code>, for which we can set up a loop using component lifecycle hooks.</p>\r\n\r\n<p>Our application data will need to have some notion of time for this to work, e.g. to draw intermediate frames, we need to know about the timing of the animation relative to the time of the current frame: When it was started, when it should end.</p>\r\n\r\n<div class=\"controls\">\r\n  <button (click)=\"toggleSimulation()\">\r\n    {{ running ? 'Stop simulation' : 'Start simulation' }}\r\n  </button>\r\n</div>\r\n\r\n<canvas #canvas width=\"800\" height=\"500\">\r\n</canvas>\r\n"
 
 /***/ }),
 
@@ -164,7 +164,7 @@ AnimatedCanvasLogoComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-animated-canvas-logo',
         template: __webpack_require__("../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.scss")]
+        styles: [__webpack_require__("../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.css")]
     }),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer */]) === "function" && _d || Object])
 ], AnimatedCanvasLogoComponent);
@@ -174,14 +174,7 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ "../../../../../src/app/animated-logo-css/animated-logo-css.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>SVG Animated With CSS</h2>\r\n\r\n<p>You can animate basic SVG attributes and transforms with CSS just like you can HTML. But you can only animate those things that are CSS styleable, or so-called <a href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#Presentation_attributes\">presentation attributes</a> like strokes, fills. Not regular attributes like x, y, or points.</p>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:g class=\"group\">\r\n    <svg:polygon class=\"shield\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n    <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg:g>\r\n</svg>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:g >\r\n    <svg:polygon  points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n    <svg:path [attr.fill]=\"fill\" (mouseenter)=\"mouseenter()\" (mouseleave)=\"mouseleave()\"  d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg:g>\r\n</svg>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/animated-logo-css/animated-logo-css.component.scss":
+/***/ "../../../../../src/app/animated-logo-css/animated-logo-css.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -189,13 +182,20 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes oscillate-enlarge {\n  from {\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n  to {\n    -webkit-transform: scale(8);\n            transform: scale(8); } }\n\n@keyframes oscillate-enlarge {\n  from {\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n  to {\n    -webkit-transform: scale(8);\n            transform: scale(8); } }\n\n@-webkit-keyframes oscillate-reduce {\n  from {\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n  to {\n    -webkit-transform: scale(0.125);\n            transform: scale(0.125); } }\n\n@keyframes oscillate-reduce {\n  from {\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n  to {\n    -webkit-transform: scale(0.125);\n            transform: scale(0.125); } }\n\n.group {\n  -webkit-animation: oscillate-enlarge 3s ease-in-out 0s infinite alternate;\n          animation: oscillate-enlarge 3s ease-in-out 0s infinite alternate;\n  -webkit-transform-origin: 125px 115px;\n          transform-origin: 125px 115px; }\n\n.shield {\n  -webkit-animation: oscillate-reduce 3.2s ease-in-out 0s infinite alternate-reverse;\n          animation: oscillate-reduce 3.2s ease-in-out 0s infinite alternate-reverse;\n  -webkit-transform-origin: 125px 115px;\n          transform-origin: 125px 115px; }\n\n.a {\n  -webkit-animation: oscillate-reduce 3.1s ease-in-out 0s infinite alternate;\n          animation: oscillate-reduce 3.1s ease-in-out 0s infinite alternate;\n  -webkit-transform-origin: 125px 115px;\n          transform-origin: 125px 115px; }\n", ""]);
+exports.push([module.i, "@-webkit-keyframes oscillate-enlarge {\r\n  from { -webkit-transform: scale(1); transform: scale(1) }\r\n  to { -webkit-transform: scale(8); transform: scale(8)}\r\n}\r\n\r\n@keyframes oscillate-enlarge {\r\n  from { -webkit-transform: scale(1); transform: scale(1) }\r\n  to { -webkit-transform: scale(8); transform: scale(8)}\r\n}\r\n\r\n@-webkit-keyframes oscillate-reduce {\r\n  from { -webkit-transform: scale(1); transform: scale(1) }\r\n  to { -webkit-transform: scale(0.125); transform: scale(0.125)}\r\n}\r\n\r\n@keyframes oscillate-reduce {\r\n  from { -webkit-transform: scale(1); transform: scale(1) }\r\n  to { -webkit-transform: scale(0.125); transform: scale(0.125)}\r\n}\r\n\r\n.group {\r\n  -webkit-animation: oscillate-enlarge 3s ease-in-out 0s infinite alternate;\r\n          animation: oscillate-enlarge 3s ease-in-out 0s infinite alternate;\r\n  -webkit-transform-origin: 125px 115px;\r\n          transform-origin: 125px 115px;\r\n}\r\n.shield {\r\n  -webkit-animation: oscillate-reduce 3.2s ease-in-out 0s infinite alternate-reverse;\r\n          animation: oscillate-reduce 3.2s ease-in-out 0s infinite alternate-reverse;\r\n  -webkit-transform-origin: 125px 115px;\r\n          transform-origin: 125px 115px;\r\n}\r\n.a {\r\n  -webkit-animation: oscillate-reduce 3.1s ease-in-out 0s infinite alternate;\r\n          animation: oscillate-reduce 3.1s ease-in-out 0s infinite alternate;\r\n  -webkit-transform-origin: 125px 115px;\r\n          transform-origin: 125px 115px;\r\n}\r\n\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/animated-logo-css/animated-logo-css.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>SVG Animated With CSS</h2>\r\n\r\n<p>You can animate basic SVG attributes and transforms with CSS just like you can HTML. But you can only animate those things that are CSS styleable, or so-called <a href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#Presentation_attributes\">presentation attributes</a> like strokes, fills. Not regular attributes like x, y, or points.</p>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:g class=\"group\">\r\n    <svg:polygon class=\"shield\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n    <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg:g>\r\n</svg>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:g >\r\n    <svg:polygon  points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n    <svg:path [attr.fill]=\"fill\" (mouseenter)=\"mouseenter()\" (mouseleave)=\"mouseleave()\"  d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg:g>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -232,7 +232,7 @@ AnimatedLogoCssComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-animated-logo-css',
         template: __webpack_require__("../../../../../src/app/animated-logo-css/animated-logo-css.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/logo.scss"), __webpack_require__("../../../../../src/app/animated-logo-css/animated-logo-css.component.scss")]
+        styles: [__webpack_require__("../../../../../src/app/logo.css"), __webpack_require__("../../../../../src/app/animated-logo-css/animated-logo-css.component.css")]
     }),
     __metadata("design:paramtypes", [])
 ], AnimatedLogoCssComponent);
@@ -241,14 +241,7 @@ AnimatedLogoCssComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>SVG Animated With GSAP</h2>\r\n\r\n<p>With the Greensock library we can unlock a whole number of advanced animation features that aren't available via CSS or Web Animations (which is what ngAnimate uses).</p>\r\n\r\n<p>For example, we can morph shapes, as we do here with the polygon points.</p>\r\n\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:polygon #left class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n  <svg:polygon #right class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n  <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n    L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n</svg>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.scss":
+/***/ "../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -263,6 +256,13 @@ exports.push([module.i, "", ""]);
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>SVG Animated With GSAP</h2>\r\n\r\n<p>With the Greensock library we can unlock a whole number of advanced animation features that aren't available via CSS or Web Animations (which is what ngAnimate uses).</p>\r\n\r\n<p>For example, we can morph shapes, as we do here with the polygon points.</p>\r\n\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:polygon #left class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n  <svg:polygon #right class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n  <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n    L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -320,7 +320,7 @@ AnimatedLogoGsapComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
         selector: 'app-animated-logo-gsap',
         template: __webpack_require__("../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/logo.scss"), __webpack_require__("../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.scss")]
+        styles: [__webpack_require__("../../../../../src/app/logo.css"), __webpack_require__("../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.css")]
     }),
     __metadata("design:paramtypes", [])
 ], AnimatedLogoGsapComponent);
@@ -330,14 +330,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>SVG Animated With NgAnimate</h2>\r\n\r\n<p>ngAnimate is implemented on top of the Web Animations API, which itself is designed to work with SVG (it is, in fact, designed to unify HTML/CSS animations with the deprected SMIL standard). This means we can use ngAnimate with SVG without any special preparations.</p>\r\n\r\n<p>With ngAnimate it is easier to connect animations to what's going on in the application: Events, state changes, etc.</p>\r\n\r\n<p>Here we have an animation attached to a state, which is changed by clicking the 'a'.</p>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:polygon class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n  <svg:polygon class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n  <svg:path class=\"a\"\r\n        (click)=\"toggleAState()\"\r\n        (mouseout)=\"mouseouthandle()\"\r\n        (mouseenter)=\"mouseenterhandle()\"\r\n        [@aState]=\"aState\"\r\n        d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n    L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n</svg>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.scss":
+/***/ "../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -345,13 +338,20 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".a {\n  cursor: pointer;\n  -webkit-transform-origin: 125px 115px;\n          transform-origin: 125px 115px; }\n  .a:hover {\n    fill: #f3f3f3; }\n", ""]);
+exports.push([module.i, ".a {\r\n  cursor: pointer;\r\n  -webkit-transform-origin: 125px 115px;\r\n          transform-origin: 125px 115px;\r\n\r\n  &:hover {\r\n    fill: #f3f3f3;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>SVG Animated With NgAnimate</h2>\r\n\r\n<p>ngAnimate is implemented on top of the Web Animations API, which itself is designed to work with SVG (it is, in fact, designed to unify HTML/CSS animations with the deprected SMIL standard). This means we can use ngAnimate with SVG without any special preparations.</p>\r\n\r\n<p>With ngAnimate it is easier to connect animations to what's going on in the application: Events, state changes, etc.</p>\r\n\r\n<p>Here we have an animation attached to a state, which is changed by clicking the 'a'.</p>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:polygon class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n  <svg:polygon class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n  <svg:path class=\"a\"\r\n        (click)=\"toggleAState()\"\r\n        (mouseout)=\"mouseouthandle()\"\r\n        (mouseenter)=\"mouseenterhandle()\"\r\n        [@aState]=\"aState\"\r\n        d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n    L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -389,7 +389,7 @@ AnimatedLogoNganimateComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-animated-logo-nganimate',
         template: __webpack_require__("../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/logo.scss"), __webpack_require__("../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.scss")],
+        styles: [__webpack_require__("../../../../../src/app/logo.css"), __webpack_require__("../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.css")],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* trigger */])('aState', [
                 Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_32" /* state */])('small', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(1)' })),
@@ -440,12 +440,14 @@ AnimatedLogoNganimateComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__basic_canvas_logo_basic_canvas_logo_component__ = __webpack_require__("../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__basic_logo_basic_logo_component__ = __webpack_require__("../../../../../src/app/basic-logo/basic-logo.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__logo_with_bindings_logo_with_bindings_component__ = __webpack_require__("../../../../../src/app/logo-with-bindings/logo-with-bindings.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__rectangle_rectangle_component__ = __webpack_require__("../../../../../src/app/rectangle/rectangle.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -463,7 +465,9 @@ var routes = [
     { path: 'svg/gsap-animation', component: __WEBPACK_IMPORTED_MODULE_5__animated_logo_gsap_animated_logo_gsap_component__["a" /* AnimatedLogoGsapComponent */] },
     { path: 'canvas/basic', component: __WEBPACK_IMPORTED_MODULE_6__basic_canvas_logo_basic_canvas_logo_component__["a" /* BasicCanvasLogoComponent */] },
     { path: 'canvas/animated', component: __WEBPACK_IMPORTED_MODULE_2__animated_canvas_logo_animated_canvas_logo_component__["a" /* AnimatedCanvasLogoComponent */] },
-    { path: '', redirectTo: 'svg/basic', pathMatch: 'full' }
+    { path: 'engalar/drawroi', component: __WEBPACK_IMPORTED_MODULE_9__rectangle_rectangle_component__["a" /* RectangleComponent */] },
+    // {path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'},
+    { path: '', redirectTo: 'svg/components', pathMatch: 'full' },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -506,7 +510,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Angular SVG & Canvas Demos</h1>\n<app-rectangle> </app-rectangle>\n<img width=\"150\" height=\"150\" src=\"/svgdemo/assets/Esquel_logo.svg\"/>\n<nav>\n  <a routerLink=\"/svg/basic\" routerLinkActive=\"active\">Basic SVG</a>\n  <a routerLink=\"/svg/bindings\" routerLinkActive=\"active\">SVG with Bindings</a>\n  <a routerLink=\"/svg/components\" routerLinkActive=\"active\">SVG with Components</a>\n  <a routerLink=\"/svg/css-animation\" routerLinkActive=\"active\">CSS-animated SVG</a>\n  <a routerLink=\"/svg/ng-animation\" routerLinkActive=\"active\">ngAnimated SVG</a>\n  <a routerLink=\"/svg/gsap-animation\" routerLinkActive=\"active\">GSAP-animated SVG</a>\n  <a routerLink=\"/canvas/basic\" routerLinkActive=\"active\">Basic Canvas</a>\n  <a routerLink=\"/canvas/changes\" routerLinkActive=\"active\">Canvas with Bindings</a>\n  <a routerLink=\"/canvas/animated\" routerLinkActive=\"active\">Canvas with Animation</a>\n</nav>\n\n\n<router-outlet>\n</router-outlet>\n\n"
+module.exports = "<ul class=\"nav\">\n  <li class=\"nav-item\">\n    <a routerLink=\"/svg/components\" class=\"nav-link active\" href=\"#\">Cascad render</a>\n  </li>\n  <li class=\"nav-item\">\n    <a routerLink=\"/engalar/drawroi\" class=\"nav-link\" href=\"#\">Draw Roi</a>\n  </li>\n</ul>\n<div class=\"container\">\n  <router-outlet>\n  </router-outlet>\n</div>\n\n"
 
 /***/ }),
 
@@ -616,14 +620,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>Basic Canvas Drawing</h2>\r\n\r\n<p>We can make a canvas, inject it to our component class as a <code>@ViewChild</code>, and then draw on it using the native canvas API.</p>\r\n\r\n\r\n<canvas #canvas width=\"500\" height=\"500\">\r\n</canvas>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.scss":
+/***/ "../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -631,13 +628,20 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "canvas {\n  width: 500px;\n  height: 500px; }\n", ""]);
+exports.push([module.i, "canvas {\r\n  width: 500px;\r\n  height: 500px;\r\n}\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Basic Canvas Drawing</h2>\r\n\r\n<p>We can make a canvas, inject it to our component class as a <code>@ViewChild</code>, and then draw on it using the native canvas API.</p>\r\n\r\n\r\n<canvas #canvas width=\"500\" height=\"500\">\r\n</canvas>\r\n"
 
 /***/ }),
 
@@ -705,7 +709,7 @@ BasicCanvasLogoComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-basic-canvas-logo',
         template: __webpack_require__("../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.scss")]
+        styles: [__webpack_require__("../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.css")]
     }),
     __metadata("design:paramtypes", [])
 ], BasicCanvasLogoComponent);
@@ -715,14 +719,7 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/basic-logo/basic-logo.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>Basic SVG support</h2>\r\n\r\n<p>You can just put an <code>&lt;svg&gt;</code> tag in a component and go to town. You can also style the SVG stuff using component styles.</p>\r\n\r\n<svg  xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:polygon class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n  <svg:polygon class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n  <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n</svg>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/basic-logo/basic-logo.component.scss":
+/***/ "../../../../../src/app/basic-logo/basic-logo.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -737,6 +734,13 @@ exports.push([module.i, "", ""]);
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/basic-logo/basic-logo.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Basic SVG support</h2>\r\n\r\n<p>You can just put an <code>&lt;svg&gt;</code> tag in a component and go to town. You can also style the SVG stuff using component styles.</p>\r\n\r\n<svg  xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:polygon class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n  <svg:polygon class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n  <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -762,7 +766,7 @@ BasicLogoComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-basic-logo',
         template: __webpack_require__("../../../../../src/app/basic-logo/basic-logo.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/logo.scss"), __webpack_require__("../../../../../src/app/basic-logo/basic-logo.component.scss")]
+        styles: [__webpack_require__("../../../../../src/app/logo.css"), __webpack_require__("../../../../../src/app/basic-logo/basic-logo.component.css")]
     })
 ], BasicLogoComponent);
 
@@ -770,14 +774,7 @@ BasicLogoComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/changing-canvas-logo/canvas-logo.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<canvas #canvas width=\"500\" height=\"500\">\r\n</canvas>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/changing-canvas-logo/canvas-logo.component.scss":
+/***/ "../../../../../src/app/changing-canvas-logo/canvas-logo.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -785,13 +782,20 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "canvas {\n  display: block;\n  width: 500px;\n  height: 500px;\n  margin: 0 auto; }\n", ""]);
+exports.push([module.i, "canvas {\r\n  display: block;\r\n  width: 500px;\r\n  height: 500px;\r\n  margin: 0 auto;\r\n}\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/changing-canvas-logo/canvas-logo.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<canvas #canvas width=\"500\" height=\"500\">\r\n</canvas>\r\n"
 
 /***/ }),
 
@@ -864,7 +868,7 @@ CanvasLogoComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-canvas-logo',
         template: __webpack_require__("../../../../../src/app/changing-canvas-logo/canvas-logo.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/changing-canvas-logo/canvas-logo.component.scss")],
+        styles: [__webpack_require__("../../../../../src/app/changing-canvas-logo/canvas-logo.component.css")],
         changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectionStrategy */].OnPush
     })
 ], CanvasLogoComponent);
@@ -874,14 +878,7 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/changing-canvas-logo/changing-canvas-logo.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>Drawing Changing Data</h2>\r\n\r\n<p>Often the data you want to put on a canvas changes over time. In that case you need to redraw every time it changes.</p>\r\n<p>One good approach is to rely on the <code>OnChanges</code> lifecycle hook. It'll be called when the component inputs change and you can redraw based on that. Note that you'll need to use an immutable convention for the data for the <code>onChanges</code> hook to activate.</p>\r\n<div class=\"controls\">\r\n  <button (click)=\"toggleChanging()\">\r\n    {{ isChanging() ? 'Stop Changes' : 'Start Changes' }}\r\n  </button>\r\n</div>\r\n<app-canvas-logo [particles]=particles>\r\n</app-canvas-logo>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/changing-canvas-logo/changing-canvas-logo.component.scss":
+/***/ "../../../../../src/app/changing-canvas-logo/changing-canvas-logo.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -889,13 +886,20 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".controls {\n  text-align: center; }\n  .controls button {\n    padding: 1em 2em; }\n", ""]);
+exports.push([module.i, ".controls {\r\n  text-align: center;\r\n  button {\r\n    padding: 1em 2em;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/changing-canvas-logo/changing-canvas-logo.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Drawing Changing Data</h2>\r\n\r\n<p>Often the data you want to put on a canvas changes over time. In that case you need to redraw every time it changes.</p>\r\n<p>One good approach is to rely on the <code>OnChanges</code> lifecycle hook. It'll be called when the component inputs change and you can redraw based on that. Note that you'll need to use an immutable convention for the data for the <code>onChanges</code> hook to activate.</p>\r\n<div class=\"controls\">\r\n  <button (click)=\"toggleChanging()\">\r\n    {{ isChanging() ? 'Stop Changes' : 'Start Changes' }}\r\n  </button>\r\n</div>\r\n<app-canvas-logo [particles]=particles>\r\n</app-canvas-logo>\r\n"
 
 /***/ }),
 
@@ -952,7 +956,7 @@ ChangingCanvasLogoComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-changing-canvas-logo',
         template: __webpack_require__("../../../../../src/app/changing-canvas-logo/changing-canvas-logo.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/changing-canvas-logo/changing-canvas-logo.component.scss")]
+        styles: [__webpack_require__("../../../../../src/app/changing-canvas-logo/changing-canvas-logo.component.css")]
     })
 ], ChangingCanvasLogoComponent);
 
@@ -1010,14 +1014,7 @@ ChangingCanvasLogoModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/logo-with-bindings/logo-with-bindings.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>SVG Data & Event Binding</h2>\r\n\r\n<p>You can use regular <code>[dataBinding]</code> syntax with SVG elements, but since SVG attributes generally aren't present in DOM nodes as writable properties, you need to use the <code>attr.</code> prefix to set them: <code>[attr.path]</code>.\r\n\r\n<p>Event handlers work as you'd expect with <code>(event)</code></p>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\"\r\n     (mousemove)=\"setCircleLocation($event)\">\r\n  <svg:defs>\r\n    <svg:clipPath id=\"clip\">\r\n      <svg:circle [attr.cx]=\"circle[0]\" [attr.cy]=\"circle[1]\" r=\"100\" />\r\n    </svg:clipPath>\r\n  </svg:defs>\r\n  <svg:g clip-path=\"url(#clip)\">\r\n    <svg:polygon class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n    <svg:polygon class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n    <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg:g>\r\n</svg>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/logo-with-bindings/logo-with-bindings.component.scss":
+/***/ "../../../../../src/app/logo-with-bindings/logo-with-bindings.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -1025,13 +1022,20 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "svg {\n  width: 250px;\n  height: 250px; }\n\ncircle, polygon, path {\n  pointer-events: none; }\n", ""]);
+exports.push([module.i, "svg {\r\n  width: 250px;\r\n  height: 250px;\r\n}\r\n\r\n// There are Firefox issues if anything but the base SVG element\r\n// reacts to mouse events.\r\ncircle, polygon, path {\r\n  pointer-events: none;\r\n}\r\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/logo-with-bindings/logo-with-bindings.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>SVG Data & Event Binding</h2>\r\n\r\n<p>You can use regular <code>[dataBinding]</code> syntax with SVG elements, but since SVG attributes generally aren't present in DOM nodes as writable properties, you need to use the <code>attr.</code> prefix to set them: <code>[attr.path]</code>.\r\n\r\n<p>Event handlers work as you'd expect with <code>(event)</code></p>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\"\r\n     (mousemove)=\"setCircleLocation($event)\">\r\n  <svg:defs>\r\n    <svg:clipPath id=\"clip\">\r\n      <svg:circle [attr.cx]=\"circle[0]\" [attr.cy]=\"circle[1]\" r=\"100\" />\r\n    </svg:clipPath>\r\n  </svg:defs>\r\n  <svg:g clip-path=\"url(#clip)\">\r\n    <svg:polygon class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n    <svg:polygon class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n    <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg:g>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -1061,7 +1065,7 @@ LogoWithBindingsComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-logo-with-bindings',
         template: __webpack_require__("../../../../../src/app/logo-with-bindings/logo-with-bindings.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/logo.scss"), __webpack_require__("../../../../../src/app/logo-with-bindings/logo-with-bindings.component.scss")]
+        styles: [__webpack_require__("../../../../../src/app/logo.css"), __webpack_require__("../../../../../src/app/logo-with-bindings/logo-with-bindings.component.css")]
     })
 ], LogoWithBindingsComponent);
 
@@ -1075,98 +1079,64 @@ LogoWithBindingsComponent = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoAComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__svg_service_service__ = __webpack_require__("../../../../../src/app/svg-service.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var LogoAComponent = (function () {
     function LogoAComponent() {
+        this.hc = false;
     }
+    // constructor(private changeDetectorRef: ChangeDetectorRef) {
+    // }
+    // @ViewChild('rect')
+    // set rect(value: ElementRef) {
+    //   if (value) {
+    //     value.nativeElement['BoxComponent'] = this;
+    //   }
+    // }
+    // ngAfterViewInit() {
+    //   this.changeDetectorRef.detach();
+    // }
+    // update() {
+    //   this.changeDetectorRef.detectChanges();
+    // }
+    LogoAComponent.prototype.mouseover = function (event) {
+        this.hc = true;
+        console.log(this.svg, 'logo-a');
+    };
+    LogoAComponent.prototype.mouseout = function (event) {
+        this.hc = false;
+    };
     return LogoAComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["a" /* Svg */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["a" /* Svg */]) === "function" && _a || Object)
+], LogoAComponent.prototype, "svg", void 0);
 LogoAComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: '[app-logo-a]',
-        template: "\n    <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\" />\n  ",
-        styles: [__webpack_require__("../../../../../src/app/logo.scss")]
+        selector: '[box]',
+        template: "\n    <svg:polygon #rect [attr.dataId]=\"svg.id\"\n                 [attr.points]=\"svg.points\" [ngClass]=\"{'left-over':hc,'left-out':!hc}\" (mouseover)=\"mouseover($event)\"\n                 (mouseout)=\"mouseout($event)\"></svg:polygon>\n  ",
+        styles: [__webpack_require__("../../../../../src/app/logo.css")],
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectionStrategy */].OnPush
     })
 ], LogoAComponent);
 
+var _a;
 //# sourceMappingURL=logo-a.component.js.map
 
 /***/ }),
 
-/***/ "../../../../../src/app/logo-with-components/logo-left.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoLeftComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var LogoLeftComponent = (function () {
-    function LogoLeftComponent() {
-    }
-    return LogoLeftComponent;
-}());
-LogoLeftComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: '[app-logo-left]',
-        template: "\n    <svg:polygon class=\"left\" points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\n  ",
-        styles: [__webpack_require__("../../../../../src/app/logo.scss")]
-    })
-], LogoLeftComponent);
-
-//# sourceMappingURL=logo-left.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/logo-with-components/logo-right.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoRightComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var LogoRightComponent = (function () {
-    function LogoRightComponent() {
-    }
-    return LogoRightComponent;
-}());
-LogoRightComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: '[app-logo-right]',
-        template: "\n    <svg:polygon class=\"right\" points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\n  ",
-        styles: [__webpack_require__("../../../../../src/app/logo.scss")]
-    })
-], LogoRightComponent);
-
-//# sourceMappingURL=logo-right.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/logo-with-components/logo-with-components.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>Components In SVG</h2>\r\n\r\n<p>You can also use Angular components inside SVG. But there are a couple of things to note about this.</p>\r\n\r\n<p>First of all, we can't use regular component elements within SVG, because you end up having unknown elements within your SVG code. SVG is XML so you can't just throw anything in there like you can with HTML. But you can make use of the fact that the \"selector\" of a component doesn't necessarily have to be an element selector. It can be any CSS selector, such as an attribute selector!</p>\r\n\r\n<p>Secondly, since the elements in your inner SVG components aren't going to be enclosed in an &lt;svg&gt; tag (which is in <em>another</em> component template), Angular won't automatically know those components are in the SVG namespace. So you need to explicitly mention that with an <code>svg:</code> prefix in the element names.</p>\r\n\r\n<svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n  <svg:g app-logo-left />\r\n  <svg:g app-logo-right />\r\n  <svg:g app-logo-a />\r\n</svg>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/logo-with-components/logo-with-components.component.scss":
+/***/ "../../../../../src/app/logo-with-components/logo-with-components.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -1184,32 +1154,60 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ "../../../../../src/app/logo-with-components/logo-with-components.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"position: relative\">\r\n\r\n  <svg style=\"position: absolute\" xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n    <svg:polygon class=\"left\"\r\n                 points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\"/>\r\n    <svg:polygon class=\"right\"\r\n                 points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\"/>\r\n    <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg>\r\n  <svg style=\"position: absolute\" style=\"position: absolute\" xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n    <svg:g box *ngFor=\"let svg of svgs\" [svg]=\"svg\">\r\n    </svg:g>\r\n  </svg>\r\n</div>\r\n"
+
+/***/ }),
+
 /***/ "../../../../../src/app/logo-with-components/logo-with-components.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoWithComponentsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__svg_service_service__ = __webpack_require__("../../../../../src/app/svg-service.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var LogoWithComponentsComponent = (function () {
-    function LogoWithComponentsComponent() {
+    function LogoWithComponentsComponent(svgService) {
+        this.svgService = svgService;
+        this.hc = false;
     }
+    LogoWithComponentsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.svgService.getSvgs().then(function (svgs) { return _this.svgs = svgs; });
+    };
+    LogoWithComponentsComponent.prototype.mouseout = function (event) {
+        console.log(event);
+        this.hc = false;
+    };
+    LogoWithComponentsComponent.prototype.mouseover = function (event) {
+        this.hc = true;
+    };
     return LogoWithComponentsComponent;
 }());
 LogoWithComponentsComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-logo-with-components',
         template: __webpack_require__("../../../../../src/app/logo-with-components/logo-with-components.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/logo.scss"), __webpack_require__("../../../../../src/app/logo-with-components/logo-with-components.component.scss")]
-    })
+        styles: [__webpack_require__("../../../../../src/app/logo.css"), __webpack_require__("../../../../../src/app/logo-with-components/logo-with-components.component.css")],
+        providers: [__WEBPACK_IMPORTED_MODULE_1__svg_service_service__["b" /* SvgServiceService */]],
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["b" /* SvgServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["b" /* SvgServiceService */]) === "function" && _a || Object])
 ], LogoWithComponentsComponent);
 
+var _a;
 //# sourceMappingURL=logo-with-components.component.js.map
 
 /***/ }),
@@ -1223,16 +1221,14 @@ LogoWithComponentsComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__logo_with_components_component__ = __webpack_require__("../../../../../src/app/logo-with-components/logo-with-components.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__logo_left_component__ = __webpack_require__("../../../../../src/app/logo-with-components/logo-left.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_right_component__ = __webpack_require__("../../../../../src/app/logo-with-components/logo-right.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_a_component__ = __webpack_require__("../../../../../src/app/logo-with-components/logo-a.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__logo_a_component__ = __webpack_require__("../../../../../src/app/logo-with-components/logo-a.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__svg_ng_for_directive__ = __webpack_require__("../../../../../src/app/svg-ng-for.directive.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -1255,9 +1251,8 @@ LogoWithComponentsModule = __decorate([
         ],
         declarations: [
             __WEBPACK_IMPORTED_MODULE_3__logo_with_components_component__["a" /* LogoWithComponentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_4__logo_left_component__["a" /* LogoLeftComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__logo_right_component__["a" /* LogoRightComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__logo_a_component__["a" /* LogoAComponent */]
+            __WEBPACK_IMPORTED_MODULE_4__logo_a_component__["a" /* LogoAComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__svg_ng_for_directive__["a" /* SvgNgForDirective */],
         ],
         exports: [
             __WEBPACK_IMPORTED_MODULE_3__logo_with_components_component__["a" /* LogoWithComponentsComponent */]
@@ -1270,7 +1265,7 @@ LogoWithComponentsModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/logo.scss":
+/***/ "../../../../../src/app/logo.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -1278,7 +1273,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "svg {\n  display: block;\n  max-width: 300px;\n  margin: 0 auto; }\n\n.left, .shield {\n  fill: #DD0031; }\n\n.right {\n  fill: #C3002F; }\n\n.a {\n  fill: #FFFFFF; }\n", ""]);
+exports.push([module.i, "svg {\r\n  display: block;\r\n  max-width: 300px;\r\n  margin: 0 auto;\r\n}\r\n.left, .shield {\r\n  fill:#DD0031;\r\n}\r\n.left-over{\r\n  stroke: blue;\r\n  stroke-width: 5px;\r\n  fill-opacity: 0;\r\n}\r\n.left-out{\r\n  fill-opacity: 0;\r\n}\r\n.right {\r\n  fill:#C3002F;\r\n}\r\n.a {\r\n  fill:#FFFFFF;\r\n}\r\n", ""]);
 
 // exports
 
@@ -1296,7 +1291,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".cp{\r\n    stroke: #101099;\r\n    stroke-width: 2;\r\n    fill: rgba(0, 0, 255, 0.78);\r\n\r\n    /* width: 10px;\r\n    height: 10px; */\r\n}\r\n.cr{\r\n    stroke: #169E5D;\r\n    stroke-width: 1;\r\n    fill: rgba(17, 191, 64, 0.78);\r\n    fill-opacity: 0.4;\r\n}", ""]);
+exports.push([module.i, ".cp {\r\n  stroke: #101099;\r\n  stroke-width: 2;\r\n  fill: rgba(0, 0, 255, 0.78);\r\n\r\n  /* width: 10px;\r\n  height: 10px; */\r\n}\r\n\r\n.cr {\r\n  stroke: #169E5D;\r\n  stroke-width: 1;\r\n  fill: rgba(17, 191, 64, 0.78);\r\n  fill-opacity: 0.4;\r\n}\r\n\r\nsvg {\r\n  border: 1px solid;\r\n}\r\n", ""]);
 
 // exports
 
@@ -1358,6 +1353,156 @@ RectangleComponent = __decorate([
 ], RectangleComponent);
 
 //# sourceMappingURL=rectangle.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/svg-ng-for.directive.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export SvgNgForRow */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvgNgForDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SvgNgForRow = (function () {
+    function SvgNgForRow($implicit, index) {
+        this.$implicit = $implicit;
+        this.index = index;
+    }
+    Object.defineProperty(SvgNgForRow.prototype, "even", {
+        get: function () {
+            return this.index % 2 === 0;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SvgNgForRow.prototype, "odd", {
+        get: function () {
+            return !this.even;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return SvgNgForRow;
+}());
+
+var SvgNgForDirective = (function () {
+    function SvgNgForDirective(_viewContainer, _template) {
+        this._viewContainer = _viewContainer;
+        this._template = _template;
+    }
+    Object.defineProperty(SvgNgForDirective.prototype, "ngForTemplate", {
+        set: function (value) {
+            if (value) {
+                this._template = value;
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    SvgNgForDirective.prototype.ngDoCheck = function () {
+        var oldLen = this._viewContainer.length;
+        var newLen = this.svgNgForOf.length;
+        var minLen = Math.min(oldLen, newLen);
+        // update existing rows
+        for (var i = 0; i < minLen; i++) {
+            var row = this.svgNgForOf[i];
+            var viewRef = this._viewContainer.get(i);
+            viewRef.context.$implicit = row;
+        }
+        // add missing rows
+        for (var i = oldLen; i < newLen; i++) {
+            var row = this.svgNgForOf[i];
+            this._viewContainer.createEmbeddedView(this._template, new SvgNgForRow(row, i));
+        }
+        // remove superfluous rows
+        for (var i = oldLen - 1; i >= newLen; i--) {
+            this._viewContainer.remove(i);
+        }
+    };
+    return SvgNgForDirective;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    __metadata("design:type", Array)
+], SvgNgForDirective.prototype, "svgNgForOf", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */]) === "function" && _a || Object),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */]) === "function" && _b || Object])
+], SvgNgForDirective.prototype, "ngForTemplate", null);
+SvgNgForDirective = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Directive */])({ selector: '[svgNgFor][svgNgForOf]' }),
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_18" /* ViewContainerRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_18" /* ViewContainerRef */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */]) === "function" && _d || Object])
+], SvgNgForDirective);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=svg-ng-for.directive.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/svg-service.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Svg; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SvgServiceService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Svg = (function () {
+    function Svg(id, points, fill) {
+        this._id = id;
+        this.points = points;
+        this.fill = fill;
+    }
+    Object.defineProperty(Svg.prototype, "id", {
+        get: function () {
+            return this._id;
+        },
+        set: function (value) {
+            this._id = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return Svg;
+}());
+
+var SvgServiceService = (function () {
+    function SvgServiceService() {
+    }
+    SvgServiceService.prototype.getSvgs = function () {
+        return Promise.resolve([
+            new Svg(1, '125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2', 'red'),
+            new Svg(2, '125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30', 'green'),
+        ]);
+    };
+    return SvgServiceService;
+}());
+SvgServiceService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [])
+], SvgServiceService);
+
+//# sourceMappingURL=svg-service.service.js.map
 
 /***/ }),
 
