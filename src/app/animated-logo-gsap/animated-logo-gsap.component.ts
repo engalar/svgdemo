@@ -5,7 +5,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-animated-logo-gsap',
   templateUrl: './animated-logo-gsap.component.html',
-  styleUrls: ['../logo.scss', './animated-logo-gsap.component.scss']
+  styleUrls: ['../logo.css', './animated-logo-gsap.component.css']
 })
 export class AnimatedLogoGsapComponent implements OnInit {
   @ViewChild('left') left: ElementRef;

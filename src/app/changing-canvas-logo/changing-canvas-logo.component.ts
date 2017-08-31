@@ -4,7 +4,7 @@ import { Particle } from './particle';
 @Component({
   selector: 'app-changing-canvas-logo',
   templateUrl: './changing-canvas-logo.component.html',
-  styleUrls: ['./changing-canvas-logo.component.scss']
+  styleUrls: ['./changing-canvas-logo.component.css']
 })
 export class ChangingCanvasLogoComponent implements OnInit, OnDestroy {
   particles: Particle[] = []

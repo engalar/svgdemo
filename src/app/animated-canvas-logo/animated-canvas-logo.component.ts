@@ -15,7 +15,7 @@ const MAX_AGE = 3000;
 @Component({
   selector: 'app-animated-canvas-logo',
   templateUrl: './animated-canvas-logo.component.html',
-  styleUrls: ['./animated-canvas-logo.component.scss']
+  styleUrls: ['./animated-canvas-logo.component.css']
 })
 export class AnimatedCanvasLogoComponent implements OnInit, OnDestroy {
 

@@ -4,7 +4,7 @@ import { Particle } from './particle';
 @Component({
   selector: 'app-canvas-logo',
   templateUrl: './canvas-logo.component.html',
-  styleUrls: ['./canvas-logo.component.scss'],
+  styleUrls: ['./canvas-logo.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CanvasLogoComponent implements OnChanges {
@@ -12,7 +12,7 @@ export class CanvasLogoComponent implements OnChanges {
   @ViewChild('canvas') canvasRef: ElementRef;
 
   ngOnChanges() {
-    let ctx: CanvasRenderingContext2D =
+    const ctx: CanvasRenderingContext2D =
       this.canvasRef.nativeElement.getContext('2d');
 
     // Clear any previous content.
@@ -44,7 +44,7 @@ export class CanvasLogoComponent implements OnChanges {
     // Draw the points given as input
     ctx.beginPath();
     ctx.fillStyle = '#DD0031';
-    for (let {x, y} of this.particles) {
+    for (const {x, y} of this.particles) {
       ctx.moveTo(x, y);
       ctx.rect(x, y, 1, 1);
     }

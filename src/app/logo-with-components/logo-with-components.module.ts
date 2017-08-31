@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LogoWithComponentsComponent } from './logo-with-components.component';
-import { LogoLeftComponent } from './logo-left.component';
-import { LogoRightComponent } from './logo-right.component';
 import { LogoAComponent } from './logo-a.component';
+import {SvgNgForDirective} from '../svg-ng-for.directive';
 
 const routes: Routes = [
   { path: 'svg/components', component: LogoWithComponentsComponent}
@@ -18,9 +17,8 @@ const routes: Routes = [
   ],
   declarations: [
     LogoWithComponentsComponent,
-    LogoLeftComponent,
-    LogoRightComponent,
-    LogoAComponent
+    LogoAComponent,
+    SvgNgForDirective,
   ],
   exports: [
     LogoWithComponentsComponent

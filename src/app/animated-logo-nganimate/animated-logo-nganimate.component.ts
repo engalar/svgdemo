@@ -3,7 +3,7 @@ import { Component, animate, keyframes, state, style, transition, trigger } from
 @Component({
   selector: 'app-animated-logo-nganimate',
   templateUrl: './animated-logo-nganimate.component.html',
-  styleUrls: ['../logo.scss', './animated-logo-nganimate.component.scss'],
+  styleUrls: ['../logo.css', './animated-logo-nganimate.component.css'],
   animations: [
     trigger('aState', [
       state('small', style({transform: 'scale(1)'})),

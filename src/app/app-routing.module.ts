@@ -8,6 +8,7 @@ import { AnimatedLogoGsapComponent } from './animated-logo-gsap/animated-logo-gs
 import { BasicCanvasLogoComponent } from './basic-canvas-logo/basic-canvas-logo.component';
 import { BasicLogoComponent } from './basic-logo/basic-logo.component';
 import { LogoWithBindingsComponent } from './logo-with-bindings/logo-with-bindings.component';
+import {RectangleComponent} from './rectangle/rectangle.component';
 
 const routes: Routes = [
   { path: 'svg/basic', component: BasicLogoComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'svg/gsap-animation', component: AnimatedLogoGsapComponent },
   { path: 'canvas/basic', component: BasicCanvasLogoComponent },
   { path: 'canvas/animated', component: AnimatedCanvasLogoComponent},
-  { path: '', redirectTo: 'svg/basic', pathMatch: 'full'}
+  { path: 'engalar/drawroi', component: RectangleComponent},
+  { path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'}
 ];
 
 @NgModule({

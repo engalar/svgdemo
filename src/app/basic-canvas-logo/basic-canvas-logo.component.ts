@@ -3,7 +3,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-basic-canvas-logo',
   templateUrl: './basic-canvas-logo.component.html',
-  styleUrls: ['./basic-canvas-logo.component.scss']
+  styleUrls: ['./basic-canvas-logo.component.css']
 })
 export class BasicCanvasLogoComponent implements OnInit {
   @ViewChild('canvas') canvasRef: ElementRef;

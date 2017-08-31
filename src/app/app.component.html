@@ -1,19 +1,13 @@
-<h1>Angular SVG & Canvas Demos</h1>
-<app-rectangle> </app-rectangle>
-<img width="150" height="150" src="svgdemo/assets/Esquel_logo.svg"/>
-<nav>
-  <a routerLink="/svg/basic" routerLinkActive="active">Basic SVG</a>
-  <a routerLink="/svg/bindings" routerLinkActive="active">SVG with Bindings</a>
-  <a routerLink="/svg/components" routerLinkActive="active">SVG with Components</a>
-  <a routerLink="/svg/css-animation" routerLinkActive="active">CSS-animated SVG</a>
-  <a routerLink="/svg/ng-animation" routerLinkActive="active">ngAnimated SVG</a>
-  <a routerLink="/svg/gsap-animation" routerLinkActive="active">GSAP-animated SVG</a>
-  <a routerLink="/canvas/basic" routerLinkActive="active">Basic Canvas</a>
-  <a routerLink="/canvas/changes" routerLinkActive="active">Canvas with Bindings</a>
-  <a routerLink="/canvas/animated" routerLinkActive="active">Canvas with Animation</a>
-</nav>
-
-
-<router-outlet>
-</router-outlet>
+<ul class="nav">
+  <li class="nav-item">
+    <a routerLink="/svg/components" class="nav-link active" href="#">Cascad render</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/engalar/drawroi" class="nav-link" href="#">Draw Roi</a>
+  </li>
+</ul>
+<div class="container">
+  <router-outlet>
+  </router-outlet>
+</div>
 
