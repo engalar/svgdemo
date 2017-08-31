@@ -13,8 +13,11 @@ import {Svg} from '../svg-service.service';
   selector: '[box]',
   template: `
     <svg:polygon #rect [attr.dataId]="svg.id"
-                 [attr.points]="svg.points" [ngClass]="{'left-over':hc,'left-out':!hc}" (mouseover)="mouseover($event)"
-                 (mouseout)="mouseout($event)"></svg:polygon>
+                 [attr.stroke]="svg.fill" [attr.points]="svg.points"
+                 [ngClass]="{'left-over':hc,'left-out':!hc}"
+                 (mouseover)="mouseover($event)"
+                 (mouseout)="mouseout($event)"
+    ></svg:polygon>
   `,
   styleUrls: ['../logo.css'],
   changeDetection: ChangeDetectionStrategy.OnPush

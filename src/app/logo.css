@@ -7,12 +7,12 @@ svg {
   fill:#DD0031;
 }
 .left-over{
-  stroke: blue;
   stroke-width: 5px;
   fill-opacity: 0;
 }
 .left-out{
   fill-opacity: 0;
+  stroke-width: 0;
 }
 .right {
   fill:#C3002F;

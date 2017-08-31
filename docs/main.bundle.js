@@ -1133,7 +1133,7 @@ __decorate([
 LogoAComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: '[box]',
-        template: "\n    <svg:polygon #rect [attr.dataId]=\"svg.id\"\n                 [attr.points]=\"svg.points\" [ngClass]=\"{'left-over':hc,'left-out':!hc}\" (mouseover)=\"mouseover($event)\"\n                 (mouseout)=\"mouseout($event)\"></svg:polygon>\n  ",
+        template: "\n    <svg:polygon #rect [attr.dataId]=\"svg.id\"\n                 [attr.stroke]=\"svg.fill\" [attr.points]=\"svg.points\"\n                 [ngClass]=\"{'left-over':hc,'left-out':!hc}\"\n                 (mouseover)=\"mouseover($event)\"\n                 (mouseout)=\"mouseout($event)\"\n    ></svg:polygon>\n  ",
         styles: [__webpack_require__("../../../../../src/app/logo.css")],
         changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectionStrategy */].OnPush
     })
@@ -1284,7 +1284,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "svg {\r\n  display: block;\r\n  max-width: 300px;\r\n  margin: 0 auto;\r\n}\r\n.left, .shield {\r\n  fill:#DD0031;\r\n}\r\n.left-over{\r\n  stroke: blue;\r\n  stroke-width: 5px;\r\n  fill-opacity: 0;\r\n}\r\n.left-out{\r\n  fill-opacity: 0;\r\n}\r\n.right {\r\n  fill:#C3002F;\r\n}\r\n.a {\r\n  fill:#FFFFFF;\r\n}\r\n", ""]);
+exports.push([module.i, "svg {\r\n  display: block;\r\n  max-width: 300px;\r\n  margin: 0 auto;\r\n}\r\n.left, .shield {\r\n  fill:#DD0031;\r\n}\r\n.left-over{\r\n  stroke-width: 5px;\r\n  fill-opacity: 0;\r\n}\r\n.left-out{\r\n  fill-opacity: 0;\r\n  stroke-width: 0;\r\n}\r\n.right {\r\n  fill:#C3002F;\r\n}\r\n.a {\r\n  fill:#FFFFFF;\r\n}\r\n", ""]);
 
 // exports
 
