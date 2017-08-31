@@ -5,7 +5,7 @@ import {
   ElementRef,
   Input,
   ViewChild,
-  AfterViewInit
+  AfterViewInit, EventEmitter, Output
 } from '@angular/core';
 import {Svg} from '../svg-service.service';
 
@@ -22,6 +22,7 @@ import {Svg} from '../svg-service.service';
 export class LogoAComponent /*implements AfterViewInit*/ {
   @Input() svg: Svg;
   hc = false;
+  @Output() select: EventEmitter<Svg> = new EventEmitter();
 
   // constructor(private changeDetectorRef: ChangeDetectorRef) {
   // }
@@ -42,11 +43,13 @@ export class LogoAComponent /*implements AfterViewInit*/ {
   // }
 
   mouseover(event: MouseEvent) {
+    this.select.emit(this.svg);
     this.hc = true;
     console.log(this.svg, 'logo-a');
   }
 
   mouseout(event: MouseEvent) {
+    this.select.emit(null);
     this.hc = false;
   }
 }

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {SvgServiceService, Svg} from '../svg-service.service';
 
 @Component({
@@ -8,8 +8,9 @@ import {SvgServiceService, Svg} from '../svg-service.service';
   providers: [SvgServiceService],
 })
 export class LogoWithComponentsComponent implements OnInit {
-  private svgs: Svg[];
+  public svgs: Svg[];
   hc = false;
+  selectedSvg: Svg;
 
   ngOnInit(): void {
     this.svgService.getSvgs().then(svgs => this.svgs = svgs);
@@ -18,10 +19,15 @@ export class LogoWithComponentsComponent implements OnInit {
   constructor(private svgService: SvgServiceService) {
   }
 
+  onselect(event: Svg) {
+    this.selectedSvg = event;
+  }
+
   mouseout(event: MouseEvent) {
     console.log(event);
     this.hc = false;
   }
+
   mouseover(event: MouseEvent) {
     this.hc = true;
   }

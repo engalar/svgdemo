@@ -1095,6 +1095,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var LogoAComponent = (function () {
     function LogoAComponent() {
         this.hc = false;
+        this.select = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]();
     }
     // constructor(private changeDetectorRef: ChangeDetectorRef) {
     // }
@@ -1111,10 +1112,12 @@ var LogoAComponent = (function () {
     //   this.changeDetectorRef.detectChanges();
     // }
     LogoAComponent.prototype.mouseover = function (event) {
+        this.select.emit(this.svg);
         this.hc = true;
         console.log(this.svg, 'logo-a');
     };
     LogoAComponent.prototype.mouseout = function (event) {
+        this.select.emit(null);
         this.hc = false;
     };
     return LogoAComponent;
@@ -1123,6 +1126,10 @@ __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["a" /* Svg */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["a" /* Svg */]) === "function" && _a || Object)
 ], LogoAComponent.prototype, "svg", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Output */])(),
+    __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]) === "function" && _b || Object)
+], LogoAComponent.prototype, "select", void 0);
 LogoAComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: '[box]',
@@ -1132,7 +1139,7 @@ LogoAComponent = __decorate([
     })
 ], LogoAComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=logo-a.component.js.map
 
 /***/ }),
@@ -1158,7 +1165,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/logo-with-components/logo-with-components.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"position: relative\">\r\n\r\n  <svg style=\"position: absolute\" xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n    <svg:polygon class=\"left\"\r\n                 points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\"/>\r\n    <svg:polygon class=\"right\"\r\n                 points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\"/>\r\n    <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n  </svg>\r\n  <svg style=\"position: absolute\" style=\"position: absolute\" xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n    <svg:g box *ngFor=\"let svg of svgs\" [svg]=\"svg\">\r\n    </svg:g>\r\n  </svg>\r\n</div>\r\n"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-md-5\" style=\"position: relative\">\r\n\r\n    <svg style=\"position: absolute\" xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\">\r\n      <svg:polygon class=\"left\"\r\n                   points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\"/>\r\n      <svg:polygon class=\"right\"\r\n                   points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\"/>\r\n      <svg:path class=\"a\" d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\"/>\r\n    </svg>\r\n    <svg style=\"position: absolute\" style=\"position: absolute\" xmlns:svg=\"http://www.w3.org/2000/svg\"\r\n         viewBox=\"0 0 250 250\">\r\n      <svg:g box *ngFor=\"let svg of svgs\" [svg]=\"svg\" (select)=\"onselect($event)\">\r\n      </svg:g>\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-md-5\">\r\n    id={{ selectedSvg?selectedSvg.id:''}}  fill={{ selectedSvg?selectedSvg.fill:''}}\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1188,6 +1195,9 @@ var LogoWithComponentsComponent = (function () {
     LogoWithComponentsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.svgService.getSvgs().then(function (svgs) { return _this.svgs = svgs; });
+    };
+    LogoWithComponentsComponent.prototype.onselect = function (event) {
+        this.selectedSvg = event;
     };
     LogoWithComponentsComponent.prototype.mouseout = function (event) {
         console.log(event);
@@ -1492,8 +1502,8 @@ var SvgServiceService = (function () {
     }
     SvgServiceService.prototype.getSvgs = function () {
         return Promise.resolve([
-            new Svg(1, '125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2', 'red'),
-            new Svg(2, '125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30', 'green'),
+            new Svg(0, '125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2', 'red'),
+            new Svg(1, '125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30', 'green'),
         ]);
     };
     return SvgServiceService;
