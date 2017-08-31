@@ -458,16 +458,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    { path: 'svg/basic', component: __WEBPACK_IMPORTED_MODULE_7__basic_logo_basic_logo_component__["a" /* BasicLogoComponent */] },
-    { path: 'svg/bindings', component: __WEBPACK_IMPORTED_MODULE_8__logo_with_bindings_logo_with_bindings_component__["a" /* LogoWithBindingsComponent */] },
-    { path: 'svg/css-animation', component: __WEBPACK_IMPORTED_MODULE_3__animated_logo_css_animated_logo_css_component__["a" /* AnimatedLogoCssComponent */] },
-    { path: 'svg/ng-animation', component: __WEBPACK_IMPORTED_MODULE_4__animated_logo_nganimate_animated_logo_nganimate_component__["a" /* AnimatedLogoNganimateComponent */] },
-    { path: 'svg/gsap-animation', component: __WEBPACK_IMPORTED_MODULE_5__animated_logo_gsap_animated_logo_gsap_component__["a" /* AnimatedLogoGsapComponent */] },
-    { path: 'canvas/basic', component: __WEBPACK_IMPORTED_MODULE_6__basic_canvas_logo_basic_canvas_logo_component__["a" /* BasicCanvasLogoComponent */] },
-    { path: 'canvas/animated', component: __WEBPACK_IMPORTED_MODULE_2__animated_canvas_logo_animated_canvas_logo_component__["a" /* AnimatedCanvasLogoComponent */] },
-    { path: 'engalar/drawroi', component: __WEBPACK_IMPORTED_MODULE_9__rectangle_rectangle_component__["a" /* RectangleComponent */] },
+    { path: 'svgdemo/svg/basic', component: __WEBPACK_IMPORTED_MODULE_7__basic_logo_basic_logo_component__["a" /* BasicLogoComponent */] },
+    { path: 'svgdemo/svg/bindings', component: __WEBPACK_IMPORTED_MODULE_8__logo_with_bindings_logo_with_bindings_component__["a" /* LogoWithBindingsComponent */] },
+    { path: 'svgdemo/svg/css-animation', component: __WEBPACK_IMPORTED_MODULE_3__animated_logo_css_animated_logo_css_component__["a" /* AnimatedLogoCssComponent */] },
+    { path: 'svgdemo/svg/ng-animation', component: __WEBPACK_IMPORTED_MODULE_4__animated_logo_nganimate_animated_logo_nganimate_component__["a" /* AnimatedLogoNganimateComponent */] },
+    { path: 'svgdemo/svg/gsap-animation', component: __WEBPACK_IMPORTED_MODULE_5__animated_logo_gsap_animated_logo_gsap_component__["a" /* AnimatedLogoGsapComponent */] },
+    { path: 'svgdemo/canvas/basic', component: __WEBPACK_IMPORTED_MODULE_6__basic_canvas_logo_basic_canvas_logo_component__["a" /* BasicCanvasLogoComponent */] },
+    { path: 'svgdemo/canvas/animated', component: __WEBPACK_IMPORTED_MODULE_2__animated_canvas_logo_animated_canvas_logo_component__["a" /* AnimatedCanvasLogoComponent */] },
+    { path: 'svgdemo/engalar/drawroi', component: __WEBPACK_IMPORTED_MODULE_9__rectangle_rectangle_component__["a" /* RectangleComponent */] },
     // {path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'},
-    { path: '', redirectTo: 'svg/components', pathMatch: 'full' },
+    { path: '', redirectTo: 'svgdemo/svg/components', pathMatch: 'full' },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -510,7 +510,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"nav\">\n  <li class=\"nav-item\">\n    <a routerLink=\"/svg/components\" class=\"nav-link active\" href=\"#\">Cascad render</a>\n  </li>\n  <li class=\"nav-item\">\n    <a routerLink=\"/engalar/drawroi\" class=\"nav-link\" href=\"#\">Draw Roi</a>\n  </li>\n</ul>\n<div class=\"container\">\n  <router-outlet>\n  </router-outlet>\n</div>\n\n"
+module.exports = "<ul class=\"nav\">\n  <li class=\"nav-item\">\n    <a routerLink=\"svgdemo/svg/components\" class=\"nav-link active\" href=\"#\">Cascad render</a>\n  </li>\n  <li class=\"nav-item\">\n    <a routerLink=\"svgdemo/engalar/drawroi\" class=\"nav-link\" href=\"#\">Draw Roi</a>\n  </li>\n</ul>\n<div class=\"container\">\n  <router-outlet>\n  </router-outlet>\n</div>\n\n"
 
 /***/ }),
 
@@ -1236,7 +1236,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    { path: 'svg/components', component: __WEBPACK_IMPORTED_MODULE_3__logo_with_components_component__["a" /* LogoWithComponentsComponent */] }
+    { path: 'svgdemo/svg/components', component: __WEBPACK_IMPORTED_MODULE_3__logo_with_components_component__["a" /* LogoWithComponentsComponent */] }
 ];
 var LogoWithComponentsModule = (function () {
     function LogoWithComponentsModule() {

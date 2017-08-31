@@ -7,7 +7,7 @@ import { LogoAComponent } from './logo-a.component';
 import {SvgNgForDirective} from '../svg-ng-for.directive';
 
 const routes: Routes = [
-  { path: 'svg/components', component: LogoWithComponentsComponent}
+  { path: 'svgdemo/svg/components', component: LogoWithComponentsComponent}
 ];
 
 @NgModule({

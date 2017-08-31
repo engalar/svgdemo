@@ -11,16 +11,16 @@ import {LogoWithBindingsComponent} from './logo-with-bindings/logo-with-bindings
 import {RectangleComponent} from './rectangle/rectangle.component';
 
 const routes: Routes = [
-  {path: 'svg/basic', component: BasicLogoComponent},
-  {path: 'svg/bindings', component: LogoWithBindingsComponent},
-  {path: 'svg/css-animation', component: AnimatedLogoCssComponent},
-  {path: 'svg/ng-animation', component: AnimatedLogoNganimateComponent},
-  {path: 'svg/gsap-animation', component: AnimatedLogoGsapComponent},
-  {path: 'canvas/basic', component: BasicCanvasLogoComponent},
-  {path: 'canvas/animated', component: AnimatedCanvasLogoComponent},
-  {path: 'engalar/drawroi', component: RectangleComponent},
+  {path: 'svgdemo/svg/basic', component: BasicLogoComponent},
+  {path: 'svgdemo/svg/bindings', component: LogoWithBindingsComponent},
+  {path: 'svgdemo/svg/css-animation', component: AnimatedLogoCssComponent},
+  {path: 'svgdemo/svg/ng-animation', component: AnimatedLogoNganimateComponent},
+  {path: 'svgdemo/svg/gsap-animation', component: AnimatedLogoGsapComponent},
+  {path: 'svgdemo/canvas/basic', component: BasicCanvasLogoComponent},
+  {path: 'svgdemo/canvas/animated', component: AnimatedCanvasLogoComponent},
+  {path: 'svgdemo/engalar/drawroi', component: RectangleComponent},
   // {path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'},
-  {path: '', redirectTo: 'svg/components', pathMatch: 'full'},
+  {path: '', redirectTo: 'svgdemo/svg/components', pathMatch: 'full'},
 ];
 
 @NgModule({
