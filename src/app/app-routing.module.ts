@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'svgdemo/engalar/drawroi', component: RectangleComponent},
   // {path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'},
   {path: '', redirectTo: 'svgdemo/svg/components', pathMatch: 'full'},
+  {path: 'svgdemo', redirectTo: 'svgdemo/svg/components', pathMatch: 'full'},
 ];
 
 @NgModule({

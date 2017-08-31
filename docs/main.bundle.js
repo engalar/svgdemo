@@ -468,6 +468,7 @@ var routes = [
     { path: 'svgdemo/engalar/drawroi', component: __WEBPACK_IMPORTED_MODULE_9__rectangle_rectangle_component__["a" /* RectangleComponent */] },
     // {path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'},
     { path: '', redirectTo: 'svgdemo/svg/components', pathMatch: 'full' },
+    { path: 'svgdemo', redirectTo: 'svgdemo/svg/components', pathMatch: 'full' },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
