@@ -12,12 +12,18 @@ import {Svg} from '../svg-service.service';
 @Component({
   selector: '[box]',
   template: `
-    <svg:polygon #rect [attr.dataId]="svg.id"
+    <svg:polygon *ngIf="svg.type==='polygon'" #rect [attr.dataId]="svg.id"
                  [attr.stroke]="svg.fill" [attr.points]="svg.points"
                  [ngClass]="{'left-over':hc,'left-out':!hc}"
                  (mouseover)="mouseover($event)"
                  (mouseout)="mouseout($event)"
-    ></svg:polygon>
+    />
+    <svg:path *ngIf="svg.type==='path'" #rect [attr.dataId]="svg.id"
+                 [attr.stroke]="svg.fill" [attr.d]="svg.points"
+                 [ngClass]="{'left-over':hc,'left-out':!hc}"
+                 (mouseover)="mouseover($event)"
+                 (mouseout)="mouseout($event)"
+    />
   `,
   styleUrls: ['../logo.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
