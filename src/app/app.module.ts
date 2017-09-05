@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
+import { ApolloClient, createNetworkInterface } from 'apollo-client';
+import { ApolloModule } from 'apollo-angular';
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from 'app/app-routing.module';
 import { AnimatedCanvasLogoComponent } from 'app/animated-canvas-logo/animated-canvas-logo.component';
@@ -14,6 +17,18 @@ import { AnimatedLogoNganimateComponent } from 'app/animated-logo-nganimate/anim
 import { ChangingCanvasLogoModule } from 'app/changing-canvas-logo/changing-canvas-logo.module';
 import { LogoWithComponentsModule } from 'app/logo-with-components/logo-with-components.module';
 import { RectangleComponent } from './rectangle/rectangle.component';
+import { ProfileComponent } from './profile/profile.component';
+
+// by default, this client will send queries to `/graphql` (relative to the URL of your app)
+const client = new ApolloClient({
+  networkInterface: createNetworkInterface({
+    uri: 'http://localhost:9977/graphql'
+  }),
+});
+
+export function provideClient(): ApolloClient {
+  return client;
+}
 
 @NgModule({
   declarations: [
@@ -26,6 +41,7 @@ import { RectangleComponent } from './rectangle/rectangle.component';
     BasicCanvasLogoComponent,
     AnimatedCanvasLogoComponent,
     RectangleComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +49,7 @@ import { RectangleComponent } from './rectangle/rectangle.component';
     AppRoutingModule,
     LogoWithComponentsModule,
     ChangingCanvasLogoModule,
+    ApolloModule.forRoot(provideClient),
   ],
   providers: [],
   bootstrap: [AppComponent]
