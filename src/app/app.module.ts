@@ -19,6 +19,7 @@ import { LogoWithComponentsModule } from 'app/logo-with-components/logo-with-com
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { ProfileComponent } from './profile/profile.component';
 import {DragDropDirectiveModule} from 'angular4-drag-drop';
+import {HttpClientModule} from '@angular/common/http';
 
 // by default, this client will send queries to `/graphql` (relative to the URL of your app)
 const client = new ApolloClient({
@@ -52,6 +53,7 @@ export function provideClient(): ApolloClient {
     ChangingCanvasLogoModule,
     ApolloModule.forRoot(provideClient),
     DragDropDirectiveModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 
 import {Apollo} from 'apollo-angular';
 import gql from 'graphql-tag';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 // We use the gql tag to parse our query string into a query document
 const CurrentUserForProfile = gql`
@@ -32,8 +33,9 @@ export class ProfileComponent implements OnInit {
   address: string;
 
   id = 3;
+  @ViewChild('fileInput') fileInput;
 
-  constructor(private apollo: Apollo) {
+  constructor(private apollo: Apollo, private  http: HttpClient) {
   }
 
   ngOnInit() {
@@ -59,5 +61,19 @@ export class ProfileComponent implements OnInit {
 
   dragenterEvent(event) {
     console.log(event);
+  }
+
+  upload() {
+    const fileBrowser = this.fileInput.nativeElement;
+    if (fileBrowser.files && fileBrowser.files[0]) {
+      const formData = new FormData();
+      formData.append('image', fileBrowser.files[0]);
+
+      this.http
+        .post('/api/items/add', formData, {
+          headers: new HttpHeaders().set('Authorization', 'my-auth-token'),
+        })
+        .subscribe(data => console.log(data));
+    }
   }
 }

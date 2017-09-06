@@ -7,3 +7,5 @@
 <h2 dropDirective
     [dropHighlight]="'drophl'"
     (dropEvent)="onDrop($event)" (dragenterEvent)="dragenterEvent($event)">drop me</h2>
+<input type="file" #fileInput placeholder="Upload file..." />
+<button type="button" (click)="upload()">Upload</button>
