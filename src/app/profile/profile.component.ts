@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {Apollo} from 'apollo-angular';
 import gql from 'graphql-tag';
@@ -31,7 +31,7 @@ export class ProfileComponent implements OnInit {
   loading: boolean;
   address: string;
 
-  private id: number;
+  id = 3;
 
   constructor(private apollo: Apollo) {
   }
@@ -49,4 +49,15 @@ export class ProfileComponent implements OnInit {
     });
   }
 
+  startDrag(event) {
+    console.log(event);
+  }
+
+  onDrop(event) {
+    console.log(event);
+  }
+
+  dragenterEvent(event) {
+    console.log(event);
+  }
 }

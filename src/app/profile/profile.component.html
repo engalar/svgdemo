@@ -3,3 +3,7 @@
 
 </p>
 <h2>loading {{loading?'onloading':'success'}}</h2>
+<h2 [dragDirective]='id' [dragHightlight]="'highlight'" (startDrag)="startDrag($event)">drag me</h2>
+<h2 dropDirective
+    [dropHighlight]="'drophl'"
+    (dropEvent)="onDrop($event)" (dragenterEvent)="dragenterEvent($event)">drop me</h2>
