@@ -9,6 +9,7 @@ import {BasicCanvasLogoComponent} from './basic-canvas-logo/basic-canvas-logo.co
 import {BasicLogoComponent} from './basic-logo/basic-logo.component';
 import {LogoWithBindingsComponent} from './logo-with-bindings/logo-with-bindings.component';
 import {RectangleComponent} from './rectangle/rectangle.component';
+import {CheckboxComponent} from './checkbox/checkbox.component';
 
 const routes: Routes = [
   {path: 'svgdemo/svg/basic', component: BasicLogoComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'svgdemo/canvas/basic', component: BasicCanvasLogoComponent},
   {path: 'svgdemo/canvas/animated', component: AnimatedCanvasLogoComponent},
   {path: 'svgdemo/engalar/drawroi', component: RectangleComponent},
+  {path: 'svgdemo/engalar/UI', component: CheckboxComponent},
   // {path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'},
   {path: '', redirectTo: 'svgdemo/svg/components', pathMatch: 'full'},
   {path: 'svgdemo', redirectTo: 'svgdemo/svg/components', pathMatch: 'full'},
