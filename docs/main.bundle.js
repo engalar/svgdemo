@@ -151,7 +151,7 @@ var AnimatedCanvasLogoComponent = (function () {
     return AnimatedCanvasLogoComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('canvas'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('canvas'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object)
 ], AnimatedCanvasLogoComponent.prototype, "canvasRef", void 0);
 __decorate([
@@ -166,7 +166,7 @@ AnimatedCanvasLogoComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.html"),
         styles: [__webpack_require__("../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_2" /* Renderer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_2" /* Renderer */]) === "function" && _d || Object])
 ], AnimatedCanvasLogoComponent);
 
 var _a, _b, _c, _d;
@@ -309,11 +309,11 @@ var AnimatedLogoGsapComponent = (function () {
     return AnimatedLogoGsapComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_16" /* ViewChild */])('left'),
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_17" /* ViewChild */])('left'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ElementRef */]) === "function" && _a || Object)
 ], AnimatedLogoGsapComponent.prototype, "left", void 0);
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_16" /* ViewChild */])('right'),
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_17" /* ViewChild */])('right'),
     __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ElementRef */]) === "function" && _b || Object)
 ], AnimatedLogoGsapComponent.prototype, "right", void 0);
 AnimatedLogoGsapComponent = __decorate([
@@ -391,31 +391,31 @@ AnimatedLogoNganimateComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.html"),
         styles: [__webpack_require__("../../../../../src/app/logo.css"), __webpack_require__("../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.css")],
         animations: [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* trigger */])('aState', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_32" /* state */])('small', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(1)' })),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_32" /* state */])('large', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(4.2)' })),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_32" /* state */])('over', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ fill: 'red' })),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* transition */])('* => over', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* animate */])('5s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_27" /* keyframes */])([
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ fill: 'blue', offset: 0 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ fill: 'green', offset: 0.3 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ fill: 'red', offset: 0.6 }),
+            Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* trigger */])('aState', [
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* state */])('small', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(1)' })),
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* state */])('large', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(4.2)' })),
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* state */])('over', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ fill: 'red' })),
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* transition */])('* => over', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_22" /* animate */])('5s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* keyframes */])([
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ fill: 'blue', offset: 0 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ fill: 'green', offset: 0.3 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ fill: 'red', offset: 0.6 }),
                 ]))),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* transition */])('over => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* animate */])('5s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_27" /* keyframes */])([
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ fill: 'red', offset: 0 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ fill: 'green', offset: 0.3 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ fill: 'white', offset: 0.6 }),
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* transition */])('over => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_22" /* animate */])('5s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* keyframes */])([
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ fill: 'red', offset: 0 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ fill: 'green', offset: 0.3 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ fill: 'white', offset: 0.6 }),
                 ]))),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* transition */])('small => large', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* animate */])('1s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_27" /* keyframes */])([
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(1)', offset: 0 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(0.7) rotate(15deg)', offset: 0.15 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(1)', offset: 0.3 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(4.2)', offset: 1 })
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* transition */])('small => large', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_22" /* animate */])('1s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* keyframes */])([
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(1)', offset: 0 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(0.7) rotate(15deg)', offset: 0.15 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(1)', offset: 0.3 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(4.2)', offset: 1 })
                 ]))),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* transition */])('large => small', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* animate */])('1s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_27" /* keyframes */])([
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(4.2)', offset: 0 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(5) rotate(-15deg)', offset: 0.15 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(4.2)', offset: 0.3 }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* style */])({ transform: 'scale(1)', offset: 1 })
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* transition */])('large => small', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_22" /* animate */])('1s ease', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* keyframes */])([
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(4.2)', offset: 0 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(5) rotate(-15deg)', offset: 0.15 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(4.2)', offset: 0.3 }),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_35" /* style */])({ transform: 'scale(1)', offset: 1 })
                 ])))
             ])
         ]
@@ -441,12 +441,14 @@ AnimatedLogoNganimateComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__basic_logo_basic_logo_component__ = __webpack_require__("../../../../../src/app/basic-logo/basic-logo.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__logo_with_bindings_logo_with_bindings_component__ = __webpack_require__("../../../../../src/app/logo-with-bindings/logo-with-bindings.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__rectangle_rectangle_component__ = __webpack_require__("../../../../../src/app/rectangle/rectangle.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__checkbox_checkbox_component__ = __webpack_require__("../../../../../src/app/checkbox/checkbox.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -466,6 +468,7 @@ var routes = [
     { path: 'svgdemo/canvas/basic', component: __WEBPACK_IMPORTED_MODULE_6__basic_canvas_logo_basic_canvas_logo_component__["a" /* BasicCanvasLogoComponent */] },
     { path: 'svgdemo/canvas/animated', component: __WEBPACK_IMPORTED_MODULE_2__animated_canvas_logo_animated_canvas_logo_component__["a" /* AnimatedCanvasLogoComponent */] },
     { path: 'svgdemo/engalar/drawroi', component: __WEBPACK_IMPORTED_MODULE_9__rectangle_rectangle_component__["a" /* RectangleComponent */] },
+    { path: 'svgdemo/engalar/UI', component: __WEBPACK_IMPORTED_MODULE_10__checkbox_checkbox_component__["a" /* CheckboxComponent */] },
     // {path: '', redirectTo: 'engalar/drawroi', pathMatch: 'full'},
     { path: '', redirectTo: 'svgdemo/svg/components', pathMatch: 'full' },
     { path: 'svgdemo', redirectTo: 'svgdemo/svg/components', pathMatch: 'full' },
@@ -511,7 +514,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"nav\">\n  <li class=\"nav-item\">\n    <a routerLink=\"svgdemo/svg/components\" class=\"nav-link active\" href=\"#\">Cascad render</a>\n  </li>\n  <li class=\"nav-item\">\n    <a routerLink=\"svgdemo/engalar/drawroi\" class=\"nav-link\" href=\"#\">Draw Roi</a>\n  </li>\n</ul>\n<div class=\"container\">\n  <router-outlet>\n  </router-outlet>\n</div>\n\n"
+module.exports = "<ul class=\"nav\">\n  <li class=\"nav-item\">\n    <a routerLink=\"svgdemo/svg/components\" class=\"nav-link active\" href=\"#\">Cascad render</a>\n  </li>\n  <li class=\"nav-item\">\n    <a routerLink=\"svgdemo/engalar/drawroi\" class=\"nav-link\" href=\"#\">Draw Roi</a>\n  </li>\n  <li class=\"nav-item\">\n    <a routerLink=\"svgdemo/engalar/UI\" class=\"nav-link\" href=\"#\">UI</a>\n  </li>\n</ul>\n<div class=\"container\">\n  <router-outlet>\n  </router-outlet>\n</div>\n<app-profile></app-profile>\n\n"
 
 /***/ }),
 
@@ -550,22 +553,31 @@ AppComponent = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export provideClient */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_app_app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_app_animated_canvas_logo_animated_canvas_logo_component__ = __webpack_require__("../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_app_basic_logo_basic_logo_component__ = __webpack_require__("../../../../../src/app/basic-logo/basic-logo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_app_logo_with_bindings_logo_with_bindings_component__ = __webpack_require__("../../../../../src/app/logo-with-bindings/logo-with-bindings.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_app_animated_logo_css_animated_logo_css_component__ = __webpack_require__("../../../../../src/app/animated-logo-css/animated-logo-css.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_app_animated_logo_gsap_animated_logo_gsap_component__ = __webpack_require__("../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_app_basic_canvas_logo_basic_canvas_logo_component__ = __webpack_require__("../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_app_animated_logo_nganimate_animated_logo_nganimate_component__ = __webpack_require__("../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_app_changing_canvas_logo_changing_canvas_logo_module__ = __webpack_require__("../../../../../src/app/changing-canvas-logo/changing-canvas-logo.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_app_logo_with_components_logo_with_components_module__ = __webpack_require__("../../../../../src/app/logo-with-components/logo-with-components.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__rectangle_rectangle_component__ = __webpack_require__("../../../../../src/app/rectangle/rectangle.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_apollo_client__ = __webpack_require__("../../../../apollo-client/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_apollo_angular__ = __webpack_require__("../../../../apollo-angular/build/src/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_app_app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_app_animated_canvas_logo_animated_canvas_logo_component__ = __webpack_require__("../../../../../src/app/animated-canvas-logo/animated-canvas-logo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_app_basic_logo_basic_logo_component__ = __webpack_require__("../../../../../src/app/basic-logo/basic-logo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_app_logo_with_bindings_logo_with_bindings_component__ = __webpack_require__("../../../../../src/app/logo-with-bindings/logo-with-bindings.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_app_animated_logo_css_animated_logo_css_component__ = __webpack_require__("../../../../../src/app/animated-logo-css/animated-logo-css.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_app_animated_logo_gsap_animated_logo_gsap_component__ = __webpack_require__("../../../../../src/app/animated-logo-gsap/animated-logo-gsap.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_app_basic_canvas_logo_basic_canvas_logo_component__ = __webpack_require__("../../../../../src/app/basic-canvas-logo/basic-canvas-logo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_app_animated_logo_nganimate_animated_logo_nganimate_component__ = __webpack_require__("../../../../../src/app/animated-logo-nganimate/animated-logo-nganimate.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_app_changing_canvas_logo_changing_canvas_logo_module__ = __webpack_require__("../../../../../src/app/changing-canvas-logo/changing-canvas-logo.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_app_logo_with_components_logo_with_components_module__ = __webpack_require__("../../../../../src/app/logo-with-components/logo-with-components.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__rectangle_rectangle_component__ = __webpack_require__("../../../../../src/app/rectangle/rectangle.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__profile_profile_component__ = __webpack_require__("../../../../../src/app/profile/profile.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular4_drag_drop__ = __webpack_require__("../../../../angular4-drag-drop/angular4-drag-drop.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__checkbox_checkbox_component__ = __webpack_require__("../../../../../src/app/checkbox/checkbox.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -587,6 +599,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+
+
+
+
+// by default, this client will send queries to `/graphql` (relative to the URL of your app)
+var client = new __WEBPACK_IMPORTED_MODULE_3_apollo_client__["a" /* ApolloClient */]({
+    networkInterface: Object(__WEBPACK_IMPORTED_MODULE_3_apollo_client__["b" /* createNetworkInterface */])({
+        uri: 'http://localhost:9977/graphql'
+    }),
+});
+function provideClient() {
+    return client;
+}
 var AppModule = (function () {
     function AppModule() {
     }
@@ -595,25 +624,34 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["M" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6_app_basic_logo_basic_logo_component__["a" /* BasicLogoComponent */],
-            __WEBPACK_IMPORTED_MODULE_7_app_logo_with_bindings_logo_with_bindings_component__["a" /* LogoWithBindingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_8_app_animated_logo_css_animated_logo_css_component__["a" /* AnimatedLogoCssComponent */],
-            __WEBPACK_IMPORTED_MODULE_11_app_animated_logo_nganimate_animated_logo_nganimate_component__["a" /* AnimatedLogoNganimateComponent */],
-            __WEBPACK_IMPORTED_MODULE_9_app_animated_logo_gsap_animated_logo_gsap_component__["a" /* AnimatedLogoGsapComponent */],
-            __WEBPACK_IMPORTED_MODULE_10_app_basic_canvas_logo_basic_canvas_logo_component__["a" /* BasicCanvasLogoComponent */],
-            __WEBPACK_IMPORTED_MODULE_5_app_animated_canvas_logo_animated_canvas_logo_component__["a" /* AnimatedCanvasLogoComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__rectangle_rectangle_component__["a" /* RectangleComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_8_app_basic_logo_basic_logo_component__["a" /* BasicLogoComponent */],
+            __WEBPACK_IMPORTED_MODULE_9_app_logo_with_bindings_logo_with_bindings_component__["a" /* LogoWithBindingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_10_app_animated_logo_css_animated_logo_css_component__["a" /* AnimatedLogoCssComponent */],
+            __WEBPACK_IMPORTED_MODULE_13_app_animated_logo_nganimate_animated_logo_nganimate_component__["a" /* AnimatedLogoNganimateComponent */],
+            __WEBPACK_IMPORTED_MODULE_11_app_animated_logo_gsap_animated_logo_gsap_component__["a" /* AnimatedLogoGsapComponent */],
+            __WEBPACK_IMPORTED_MODULE_12_app_basic_canvas_logo_basic_canvas_logo_component__["a" /* BasicCanvasLogoComponent */],
+            __WEBPACK_IMPORTED_MODULE_7_app_animated_canvas_logo_animated_canvas_logo_component__["a" /* AnimatedCanvasLogoComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__rectangle_rectangle_component__["a" /* RectangleComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__profile_profile_component__["a" /* ProfileComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__checkbox_checkbox_component__["a" /* CheckboxComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_4_app_app_routing_module__["a" /* AppRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_13_app_logo_with_components_logo_with_components_module__["a" /* LogoWithComponentsModule */],
-            __WEBPACK_IMPORTED_MODULE_12_app_changing_canvas_logo_changing_canvas_logo_module__["a" /* ChangingCanvasLogoModule */],
+            __WEBPACK_IMPORTED_MODULE_6_app_app_routing_module__["a" /* AppRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_15_app_logo_with_components_logo_with_components_module__["a" /* LogoWithComponentsModule */],
+            __WEBPACK_IMPORTED_MODULE_14_app_changing_canvas_logo_changing_canvas_logo_module__["a" /* ChangingCanvasLogoModule */],
+            __WEBPACK_IMPORTED_MODULE_4_apollo_angular__["b" /* ApolloModule */].forRoot(provideClient),
+            __WEBPACK_IMPORTED_MODULE_18_angular4_drag_drop__["a" /* DragDropDirectiveModule */],
+            __WEBPACK_IMPORTED_MODULE_19__angular_common_http__["b" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_22__angular_forms__["c" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_20__angular_material__["a" /* MdButtonModule */],
+            __WEBPACK_IMPORTED_MODULE_20__angular_material__["b" /* MdCheckboxModule */],
+            __WEBPACK_IMPORTED_MODULE_20__angular_material__["d" /* MdSnackBarModule */],
         ],
         providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -703,7 +741,7 @@ var BasicCanvasLogoComponent = (function () {
     return BasicCanvasLogoComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('canvas'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('canvas'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object)
 ], BasicCanvasLogoComponent.prototype, "canvasRef", void 0);
 BasicCanvasLogoComponent = __decorate([
@@ -862,7 +900,7 @@ __decorate([
     __metadata("design:type", Array)
 ], CanvasLogoComponent.prototype, "particles", void 0);
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('canvas'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('canvas'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object)
 ], CanvasLogoComponent.prototype, "canvasRef", void 0);
 CanvasLogoComponent = __decorate([
@@ -1015,6 +1053,90 @@ ChangingCanvasLogoModule = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/checkbox/checkbox.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\r\n\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/checkbox/checkbox.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"example-section\">\n  <md-checkbox class=\"example-margin\" [(ngModel)]=\"checked\">Checked</md-checkbox>\n  <md-checkbox class=\"example-margin\" [(ngModel)]=\"indeterminate\">Indeterminate</md-checkbox>\n  <md-button-toggle>click me</md-button-toggle>\n  <md-radio-button></md-radio-button>\n\n  <h3>Basic Buttons</h3>\n  <div class=\"button-row\">\n    <button md-button>Basic</button>\n    <button md-button color=\"primary\">Primary</button>\n    <button md-button color=\"accent\">Accent</button>\n    <button md-button color=\"warn\">Warn</button>\n    <button md-button disabled>Disabled</button>\n    <a md-button routerLink=\".\">Link</a>\n  </div>\n\n  <h3>Raised Buttons</h3>\n  <div class=\"button-row\">\n    <button md-raised-button>Basic</button>\n    <button md-raised-button color=\"primary\">Primary</button>\n    <button md-raised-button color=\"accent\">Accent</button>\n    <button md-raised-button color=\"warn\">Warn</button>\n    <button md-raised-button disabled>Disabled</button>\n    <a md-raised-button routerLink=\".\">Link</a>\n  </div>\n\n  <h3>Icon Buttons</h3>\n  <div class=\"button-row\">\n    <button md-icon-button>\n      <md-icon class=\"md-24\" aria-label=\"Example icon-button with a heart icon\">favorite</md-icon>\n    </button>\n    <button md-icon-button color=\"primary\">\n      <md-icon class=\"md-24\" aria-label=\"Example icon-button with a heart icon\">favorite</md-icon>\n    </button>\n    <button md-icon-button color=\"accent\">\n      <md-icon class=\"md-24\" aria-label=\"Example icon-button with a heart icon\">favorite</md-icon>\n    </button>\n    <button md-icon-button color=\"warn\">\n      <md-icon class=\"md-24\" aria-label=\"Example icon-button with a heart icon\">favorite</md-icon>\n    </button>\n    <button md-icon-button disabled>\n      <md-icon class=\"md-24\" aria-label=\"Example icon-button with a heart icon\">favorite</md-icon>\n    </button>\n  </div>\n\n  <h3>Fab Buttons</h3>\n  <div class=\"button-row\">\n    <button md-fab>Basic</button>\n    <button md-fab color=\"primary\">Primary</button>\n    <button md-fab color=\"accent\">Accent</button>\n    <button md-fab color=\"warn\">Warn</button>\n    <button md-fab disabled>Disabled</button>\n    <button md-fab>\n      <md-icon class=\"md-24\" aria-label=\"Example icon-button with a heart icon\">favorite</md-icon>\n    </button>\n    <a md-fab routerLink=\".\">Link</a>\n  </div>\n\n  <h3>Mini Fab Buttons</h3>\n  <div class=\"button-row\">\n    <button md-mini-fab>Basic</button>\n    <button md-mini-fab color=\"primary\">Primary</button>\n    <button md-mini-fab color=\"accent\">Accent</button>\n    <button md-mini-fab color=\"warn\">Warn</button>\n    <button md-mini-fab disabled>Disabled</button>\n    <button md-mini-fab>\n      <md-icon class=\"md-24\" aria-label=\"Example icon-button with a heart icon\">favorite</md-icon>\n    </button>\n    <a md-mini-fab routerLink=\".\">Link</a>\n  </div>\n\n\n  <button md-button (click)=\"openSnackBar()\" aria-label=\"Show an example snack-bar\">\n    Pizza party\n  </button>\n</section>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/checkbox/checkbox.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CheckboxComponent = (function () {
+    function CheckboxComponent(snackBar) {
+        this.snackBar = snackBar;
+        this.checked = false;
+        this._indeterminate = false;
+        this.align = 'start';
+        this.disabled = false;
+    }
+    Object.defineProperty(CheckboxComponent.prototype, "indeterminate", {
+        get: function () {
+            return this._indeterminate;
+        },
+        set: function (value) {
+            this._indeterminate = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    CheckboxComponent.prototype.ngOnInit = function () {
+    };
+    CheckboxComponent.prototype.openSnackBar = function () {
+        this.snackBar.open('🍕🍕🍕🍕🍕 Pizza party!!! 🍕🍕🍕🍕🍕', null, {
+            duration: 500,
+        });
+    };
+    return CheckboxComponent;
+}());
+CheckboxComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-checkbox',
+        template: __webpack_require__("../../../../../src/app/checkbox/checkbox.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/checkbox/checkbox.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdSnackBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdSnackBar */]) === "function" && _a || Object])
+], CheckboxComponent);
+
+var _a;
+//# sourceMappingURL=checkbox.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/logo-with-bindings/logo-with-bindings.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1127,7 +1249,7 @@ __decorate([
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["a" /* Svg */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__svg_service_service__["a" /* Svg */]) === "function" && _a || Object)
 ], LogoAComponent.prototype, "svg", void 0);
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Output */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Output */])(),
     __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]) === "function" && _b || Object)
 ], LogoAComponent.prototype, "select", void 0);
 LogoAComponent = __decorate([
@@ -1294,6 +1416,116 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ "../../../../../src/app/profile/profile.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".highlight{\r\n  background-color: red;\r\n}\r\n\r\n.drophl{\r\n  background-color: #169E5D;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/profile/profile.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  profile-component works!  {{ ' id='+id+' address='+address}}\n\n</p>\n<h2>loading {{loading?'onloading':'success'}}</h2>\n<h2 [dragDirective]='id' [dragHightlight]=\"'highlight'\" (startDrag)=\"startDrag($event)\">drag me</h2>\n<h2 dropDirective\n    [dropHighlight]=\"'drophl'\"\n    (dropEvent)=\"onDrop($event)\" (dragenterEvent)=\"dragenterEvent($event)\">drop me</h2>\n<input type=\"file\" #fileInput placeholder=\"Upload file...\" />\n<button type=\"button\" (click)=\"upload()\">Upload</button>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/profile/profile.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_apollo_angular__ = __webpack_require__("../../../../apollo-angular/build/src/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_tag__ = __webpack_require__("../../../../graphql-tag/src/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_tag__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+// We use the gql tag to parse our query string into a query document
+var CurrentUserForProfile = (_a = ["\n  query CurrentUserForProfile {\n    owner(id: 1) {\n    id\n    address\n  }\n  }\n"], _a.raw = ["\n  query CurrentUserForProfile {\n    owner(id: 1) {\n    id\n    address\n  }\n  }\n"], __WEBPACK_IMPORTED_MODULE_2_graphql_tag___default()(_a));
+var ProfileComponent = (function () {
+    function ProfileComponent(apollo, http) {
+        this.apollo = apollo;
+        this.http = http;
+        this.id = 3;
+    }
+    ProfileComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.loading = true;
+        this.apollo.watchQuery({
+            query: CurrentUserForProfile
+        }).subscribe(function (respon) {
+            var data = respon.data;
+            _this.loading = respon.loading;
+            _this.id = data.owner.id;
+            _this.address = data.owner.address;
+        });
+    };
+    ProfileComponent.prototype.startDrag = function (event) {
+        console.log(event);
+    };
+    ProfileComponent.prototype.onDrop = function (event) {
+        console.log(event);
+    };
+    ProfileComponent.prototype.dragenterEvent = function (event) {
+        console.log(event);
+    };
+    ProfileComponent.prototype.upload = function () {
+        var fileBrowser = this.fileInput.nativeElement;
+        if (fileBrowser.files && fileBrowser.files[0]) {
+            var formData = new FormData();
+            formData.append('image', fileBrowser.files[0]);
+            this.http
+                .post('/api/items/add', formData, {
+                headers: new __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["c" /* HttpHeaders */]().set('Authorization', 'my-auth-token'),
+            })
+                .subscribe(function (data) { return console.log(data); });
+        }
+    };
+    return ProfileComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ViewChild */])('fileInput'),
+    __metadata("design:type", Object)
+], ProfileComponent.prototype, "fileInput", void 0);
+ProfileComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-profile',
+        template: __webpack_require__("../../../../../src/app/profile/profile.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/profile/profile.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_apollo_angular__["a" /* Apollo */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_apollo_angular__["a" /* Apollo */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]) === "function" && _c || Object])
+], ProfileComponent);
+
+var _b, _c;
+var _a;
+//# sourceMappingURL=profile.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/rectangle/rectangle.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1315,7 +1547,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/rectangle/rectangle.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<svg (mousemove)=\"mousemove($event)\" (zoom)=\"zoom($event)\" (mouseover)=\"mouseover($event)\" width=\"1000\" height=\"300\" xmlns:svg=\"http://www.w3.org/2000/svg\">\n  <svg:polygon points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\n  <svg:polygon points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\n  <svg:path d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\" />\n  <g>\n    <!--region-->\n    <rect class=\"cr\" [attr.width]=\"x\" [attr.height]=\"y\" [attr.x]=\"0\" [attr.y]=\"0\" />\n\n    <!--left top-->\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"-5\" [attr.y]=\"-5\" />\n    <!--right top-->\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"x-5\" [attr.y]=\"-5\" />\n    <!--right bottom-->\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"x-5\" [attr.y]=\"y-5\" />\n    <!--left bottom-->\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"-5\" [attr.y]=\"y-5\" />\n  </g>\n</svg>\n"
+module.exports = "<svg (mousemove)=\"mousemove($event)\"\r\n     (mousewheel)=\"scroll($event)\"\r\n     (zoom)=\"zoom($event)\"\r\n     (mouseover)=\"mouseover($event)\"\r\n     [attr.width]=\"rectangeWidth\" [attr.height]=\"rectangeHeight\" [attr.viewBox]=\"viewBox\"\r\n     preserveAspectRatio=\"none\"\r\n     xmlns:svg=\"http://www.w3.org/2000/svg\">\r\n  <svg:polygon points=\"125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2\" />\r\n  <svg:polygon points=\"125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30\" />\r\n  <svg:path d=\"M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1\r\n      L125,52.1z M142,135.4H108l17-40.9L142,135.4z\" />\r\n  <g>\r\n    <!--region-->\r\n    <rect class=\"cr\" [attr.width]=\"x\" [attr.height]=\"y\" [attr.x]=\"0\" [attr.y]=\"0\" />\r\n\r\n    <!--left top-->\r\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"-5\" [attr.y]=\"-5\" />\r\n    <!--right top-->\r\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"x-5\" [attr.y]=\"-5\" />\r\n    <!--right bottom-->\r\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"x-5\" [attr.y]=\"y-5\" />\r\n    <!--left bottom-->\r\n    <rect class=\"cp\" width=\"10\" height=\"10\"  [attr.x]=\"-5\" [attr.y]=\"y-5\" />\r\n  </g>\r\n</svg>\r\n"
 
 /***/ }),
 
@@ -1339,18 +1571,45 @@ var RectangleComponent = (function () {
     function RectangleComponent() {
         this.y = 0;
         this.x = 0;
+        this.sc = 1;
+        /**
+         * viewBox x scale
+         * @type {number}
+         */
+        this.viewBoxScX = 0.5;
+        /**
+         * viewBox y scale
+         * @type {number}
+         */
+        this.viewBoxScY = 1;
+        this.viewBoxX = 0;
+        this.viewBoxY = 0;
+        this.rectangeWidth = 400;
+        this.rectangeHeight = 300;
     }
     RectangleComponent.prototype.ngOnInit = function () {
+        this.viewBox = this.viewBoxX + " " + this.viewBoxY + " " + this.viewBoxScX * this.rectangeWidth + " " + this.viewBoxScY * this.rectangeHeight;
     };
     RectangleComponent.prototype.mouseover = function (event) {
     };
     RectangleComponent.prototype.mousemove = function (event) {
-        this.x = event.offsetX;
-        this.y = event.offsetY;
-        console.log("x=" + this.x + " y=" + this.y);
+        this.x = Math.max(0, this.viewBoxX + event.offsetX * this.viewBoxScX);
+        this.y = Math.max(0, this.viewBoxY + event.offsetY * this.viewBoxScY);
     };
     RectangleComponent.prototype.zoom = function (event) {
-        console.log(event);
+        // console.log(event);
+    };
+    RectangleComponent.prototype.scroll = function (event) {
+        var actCursorX = this.viewBoxScX * event.x;
+        var actCursorY = this.viewBoxScY * event.y;
+        this.viewBoxScX = Math.max(0.2, (event.wheelDelta / 120 * 0.2 + this.viewBoxScX));
+        this.viewBoxScX = Math.min(6, this.viewBoxScX);
+        this.viewBoxScY = Math.max(0.2, (event.wheelDelta / 120 * 0.2 + this.viewBoxScY));
+        this.viewBoxScY = Math.min(6, this.viewBoxScY);
+        console.log(this.viewBoxScX);
+        this.viewBoxX = actCursorX - this.viewBoxScX * this.rectangeWidth * 0.5;
+        this.viewBoxY = actCursorY - this.viewBoxScY * this.rectangeHeight * 0.5;
+        this.viewBox = this.viewBoxX + " " + this.viewBoxY + " " + this.viewBoxScX * this.rectangeWidth + " " + this.viewBoxScY * this.rectangeHeight;
     };
     return RectangleComponent;
 }());
@@ -1448,12 +1707,12 @@ __decorate([
 ], SvgNgForDirective.prototype, "svgNgForOf", void 0);
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */]) === "function" && _a || Object),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */]) === "function" && _b || Object])
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* TemplateRef */]) === "function" && _a || Object),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* TemplateRef */]) === "function" && _b || Object])
 ], SvgNgForDirective.prototype, "ngForTemplate", null);
 SvgNgForDirective = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Directive */])({ selector: '[svgNgFor][svgNgForOf]' }),
-    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_18" /* ViewContainerRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_18" /* ViewContainerRef */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* TemplateRef */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_19" /* ViewContainerRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_19" /* ViewContainerRef */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* TemplateRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* TemplateRef */]) === "function" && _d || Object])
 ], SvgNgForDirective);
 
 var _a, _b, _c, _d;
@@ -1544,19 +1803,22 @@ var environment = {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__("../../../../../src/polyfills.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_hammerjs__ = __webpack_require__("../../../../hammerjs/hammer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_hammerjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 
 
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_23" /* enableProdMode */])();
+
+if (__WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].production) {
+    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_24" /* enableProdMode */])();
 }
-Object(__WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
+Object(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
